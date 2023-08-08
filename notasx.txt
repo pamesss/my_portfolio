@@ -1,0 +1,24 @@
+NECESSÁRIO EM UM PORTFOLIO
+
+home
+meu nome
+minhas formas de contato (instagram, linkedin, github)
+uma foto minha
+meus projetos favoritos em destaque	
+
+sobre
+uma breve apresentação sobre mim
+nome do meu curso com link
+educação
+cursos
+minhas skills em forma de barras de progresso
+
+projetos
+
+modelo
+foto/link do projeto
+breve descrição
+stack usada
+link da demo e link do codigo no github
+
+

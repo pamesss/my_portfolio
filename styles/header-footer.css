@@ -1,0 +1,103 @@
+.header--mobile, 
+.header__btn, 
+.header__navbar__btn {
+    display: none;
+}
+
+.header {
+    z-index: 999;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 3vh 180px;
+    transition: all 0.5s ease;
+}
+.header__title {
+    font-family: var(--title-font);
+    font-size: var(--font-size-bigger-text);
+    color: var(--text_black);
+}
+
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(--text_white);
+}
+.navbar-menu__link {
+    font-family: var(--title-font);
+    font-size: var(--font-size-functional);
+    font-weight: 600;
+    color: var(--text_light-grey);
+
+    transition: all 0.5s ease;
+}
+.navbar-menu__link:hover, 
+.navbar-menu__link:active {
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: var(--text_white);
+    background-color: var(--highlighter_purple);
+
+}
+
+.header__socialmedia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.socialmedia__img{
+    width: 1.6em;
+    margin: 0 15px 0 0;
+    filter: invert(30%) sepia(100%) saturate(2218%) hue-rotate(235deg) brightness(103%) contrast(90%);
+    
+    transition: all 0.5s ease;
+}
+.socialmedia__img:hover {
+    transform: scale(1.1);
+    filter: invert(19%) sepia(42%) saturate(2113%) hue-rotate(225deg) brightness(100%) contrast(93%);
+}
+.header__change-language {
+    width: 1.6em;
+    border: 2px solid var(--highlighter_purple);
+    border-radius: 100%;
+
+    transition: all 0.5s ease;
+
+}.header__change-language:hover {
+    transform: scale(1.1);
+    border: 2px solid #3f3585;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap row;
+    bottom: 0;
+    width: 100%;
+    padding: 3vh 180px;
+    border-top: 2px solid #c2c2c280;
+    text-align: center;
+    font-family: var(--text-font);
+    font-size: var(--font-size-functional);
+    color: var(--text_light-grey);
+}
+.footer__links{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.footer__item--link { color: var(--highlighter_purple); }
+.footer__item--link:hover {
+    transform: scale(1.1);
+    color: #3f3585;
+    transition: all 0.5s ease;
+}

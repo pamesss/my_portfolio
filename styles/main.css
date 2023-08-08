@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+@import url(../styles/header-footer.css);
+@import url(../styles/hero.css);
+
+:root {
+    --text_white: #f0f0f0;
+    --text_light-grey: #808080;
+    --text_grey: #747474;
+    --text_black: #0a0a0a;
+    --highlighter_purple: #715df2;
+    --opacity: #ffffff00;
+
+    --title-font: 'Raleway', sans-serif;
+    --text-font: 'Helvetica', sans-serif;
+
+    --font-size-title: 4.236rem;
+    --font-size-subtitle: 2rem;
+    --font-size-bigger-text: 1.2rem;
+    --font-size-text: 1rem;
+    --font-size-functional: 1rem;
+}
+* {
+    margin: 0; padding: 0;
+    list-style-type: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e7e7e7;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content--grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-rows: repeat(8, 1fr);*/
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin: 5vh 25vw;
+}
+.featured__intro--grid, .aboutme_intro--grid, .aboutme_skils--grid, .projects__title--grid { margin-top: 70px;}
+.title_style {
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: var(--font-size-subtitle);
+    color: var(--text_black);
+}
+.text_style {
+    font-family: var(--text-font);
+    font-size: var(--font-size-text);
+    color: var(--text_grey);
+    line-height: 1.2em;
+}
+
+.featured__intro--grid { grid-area: 1 / 1 / 2 / 3; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.featured__btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-family: var(--title-font);
+    font-size: var(--font-size-functional);
+    color: var(--text_white);
+
+    background-color: var(--highlighter_purple);
+    box-shadow: 0px 0px 5px 1px #715df283;
+
+    transition: all 0.5s ease;
+}
+.featured__btn:hover {
+    filter: brightness(80%);
+    transform: translateX(10px);
+}
+.featured__btn-icon {
+    width: 1.5em;
+    filter: invert(100%) sepia(3%) saturate(10%) hue-rotate(42deg) brightness(104%) contrast(101%);
+}
+
+.featured_project--grid { grid-area: 2 / 1 / 3 / 3; }
+.projects__title--grid { grid-area: 4 / 1 / 5 / 2; }
+.projects_container--grid { grid-area: 5 / 1 / 6 / 3; } 
+.feature_section, .projects_section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 30px 0;
+}
+.project__card {
+    display: block;
+    height: 216px;
+    width: 396px;
+    border-radius: 15px;
+    overflow: hidden;
+    
+    box-shadow: 0px 0px 5px 1px #77777783;
+}
+.project__title {
+    z-index: 700;
+    position: absolute;
+    margin: 10px;
+    padding: 6px 15px;
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: var(--font-size-functional);
+    color: var(--text_black);
+    background-color: var(--text_white);
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.project__title:hover {
+    filter: brightness(80%);
+}
+.project__bg-img {
+    width: 106%;
+    background-color: #747474;
+    
+    transition: transform 1s ease;
+}.project__bg-img:hover {
+    transform: scale(1.2); filter: blur(1px);}
+
+.aboutme_intro--grid { grid-area: 3 / 1 / 4 / 2; }
+.aboutme__title {
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: var(--font-size-subtitle);
+    color: var(--text_black);
+    margin-bottom: 15px;
+}
+.aboutme__text {
+    font-family: var(--text-font);
+    font-size: var(--font-size-text);
+    color: var(--text_grey);
+    line-height: 1.2em;
+}
+.aboutme_skils--grid { grid-area: 3 / 2 / 4 / 3; }
+.skills_container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+.skills__item {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: var(--text-font);
+    font-weight: 700;
+    font-size: var(--font-size-functional);
+    color: var(--text_grey);
+    background-color: #d1d1d1;
+}
